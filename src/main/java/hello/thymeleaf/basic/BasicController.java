@@ -104,6 +104,10 @@ public class BasicController {
         addUsers(model);
         return "basic/each";
     }
+    @GetMapping("/attribute")
+    public String attribute() {
+        return "basic/attribute";
+    }
     private void addUsers(Model model) {
         List<User> list = new ArrayList<>();
         list.add(new User("userA", 10));
